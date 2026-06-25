@@ -40,5 +40,6 @@ dll.append(10)
 dll.append(20)
 dll.append(30)
 dll.append(40)
+dll.append(50)
     
-dll.traverse_forward()
+dll.display_forward()
