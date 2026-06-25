@@ -61,7 +61,8 @@ class SinglyLinkedList:
         if self.head is None:
             print("SLL is Empty")
             return
-        #posi
+        #position
+        
         if pos == 0:
             self.head = self.next.next
             return
