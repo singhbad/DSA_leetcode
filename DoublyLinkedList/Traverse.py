@@ -11,7 +11,7 @@ class DoublyLinkedList:
         self.tail = None
         self.size = 0
 
-    def traverse_forward(self):
+    def display_forward(self):
         curr = self.head
 
         while curr:
