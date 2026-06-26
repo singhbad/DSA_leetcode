@@ -35,11 +35,27 @@ class DoublyLinkedList:
 
         self.size += 1
 
+    def prepend(self, data):
+        
+        new_node = Node(data)
+
+        if self.head is None:
+            self.head = None
+            self.tail = None
+
+        else:
+            new_node.next = self.head
+            self.head.prev = new_node
+            self.head = new_node
+            
+        self.size += 1
+
 dll = DoublyLinkedList()
 dll.append(10)
 dll.append(20)
 dll.append(30)
 dll.append(40)
 dll.append(50)
+dll.prepend(5)
     
 dll.display_forward()
